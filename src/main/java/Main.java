@@ -42,7 +42,7 @@ public class Main {
                 }
         );
 
-        posts.stream().filter(value -> value.getUpvotes() != null && value.getUpvotes().length() > 0).forEach(System.out::println);
+        posts.stream().filter(value -> value.getUpvotes() != null && value.getUpvotes() > 0).forEach(System.out::println);
 
         response.close();
         httpClient.close();
